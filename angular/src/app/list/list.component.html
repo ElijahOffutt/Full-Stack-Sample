@@ -1,0 +1,13 @@
+<section id="list-component">
+    <input [(ngModel)]="search" (keyup)="onKeyUp(search)" type="text" placeholder="Search...">
+    <ul>
+        <li *ngFor="let item of filtered"><a [(href)]="item.url" target="_blank">
+        <span class="title">{{item.title}}</span>
+        <div class="stats">
+            <span class="user"><b>By</b> {{ item.user }} / </span>
+            <span class="points"> <b>Points:</b> {{ item.points }} / </span>
+            <span class="comments"><b>CC:</b> {{ item.comments_count }}</span>
+        </div>
+        </a></li>
+    </ul>
+</section>

@@ -1,0 +1,50 @@
+<main>
+
+    <video autoplay loop src="../assets/bg.mp4"></video>
+
+    <a href="https://github.com/ElijahOffutt" target="_blank" class="logo"></a>
+
+    <section class="heading">
+        <h1>Data Filter Sample</h1>
+        <span>
+        Designed &amp; Developed By 
+        <a target="_blank" href="https://github.com/ElijahOffutt"
+        style="color: #3498db;">Elijah Offutt</a>
+         using 
+        <a target="_blank" href="https://angular.io/"
+        style="color: #e74c3c;">Angular</a>
+        </span>
+    </section>
+
+    <section class="tabs">
+        <label for="tab1">Overview</label>
+        <label for="tab2">How it Works</label>
+        <label for="tab3">Conclusion</label>
+    </section>
+
+    <section class="contents">
+        <input type="radio" name="tabs" id="tab1" checked="checked">
+        <input type="radio" name="tabs" id="tab2">
+        <input type="radio" name="tabs" id="tab3">
+        <div class="content" id="c1">
+            <h2>Overview</h2>
+            <span>Thanks for your consideration.</span>
+            <p>If you are here then you are reviewing me for a potential position as either a front-end, back-end or full stack developer. I want to start off by saying I greatly appreciate the consideration as your potential choice moving forward in this application process. Regardless of the result I hope you the best of luck in making your decision moving. <br><br> This micro application was built with the intention of showcasing my skills and understanding in the technique of data filtering and mitigating server traffic. Some of the techniques used here were learned in a combination of school, freelance work as well as on the job experience. To use the sample, simply start typing in the input to the right. Thanks again for your attention and looking forward to hearing from you soon.
+            </p>
+        </div>
+        <div class="content" id="c2">
+            <h2>The Run Down</h2>
+            <span>How it all comes together.</span>
+            <p>If you have somehow gotten to this page without installing and running the application, I would recommend going to the github project and thoroughly reading through the installing steps to get things properly configured and running. <br><br> The app is built with two files being the main server and the model in which items are interfaced with on the database. Essentially before each call to the server is sent the data is stripped to a general search that is then used on the server to find relating items. That data is then returned and using javascript higher level functions, the data is then filtered even more on the fly.
+            </p>
+        </div>
+        <div class="content" id="c3">
+            <h2>In Conclusion</h2>
+            <span>A little more from the dev</span>
+            <p>Again I want to thank you for any consideration. This version of the application is built using the ANgular framework but it also has a version built with VueJs, React, JQuery and Vanilla Javascript. The can be accessed by typing the corresponding names a the end of the main url. The initial url may take to you this experience if the aforementioned position is catered towards a certain technology. Thanks again. </p>
+        </div>
+    </section>
+
+    <app-list></app-list>
+
+</main>
