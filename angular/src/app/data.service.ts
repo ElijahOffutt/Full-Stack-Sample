@@ -35,7 +35,7 @@ export class DataService {
         } else {
             
             // ONLY FIRES WHEN SEARCH IS GREATTER THEN ONE
-            if(search > 1){
+            if(search.length > 1){
                 
                 // FILTER CURRENT RESULTS 
                 let filtered = this.stuff.filter((item)=>{
