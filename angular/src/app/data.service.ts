@@ -33,27 +33,12 @@ export class DataService {
             return []; 
             
         } else {
-            
-            // ONLY FIRES WHEN SEARCH IS GREATTER THEN ONE
-            if(search.length > 1){
                 
-                // FILTER CURRENT RESULTS 
-                let filtered = this.stuff.filter((item)=>{
-                    return item.user.match(search) || item.title.match(search) || JSON.stringify(item.url).match(search);
-                });
-                
-                // RETURN RESULTS
-                return filtered;
-                
-            } else {
-                
-                // SET CACHE TO RESULTS OF SERVER CALL
-                this.stuff = this.http.get(API+search);
-                
-                // RETURN DATA
-                return this.stuff; 
-                
-            }
+            // SET CACHE TO RESULTS OF SERVER CALL
+            this.stuff = this.http.get(API+search);
+
+            // RETURN DATA
+            return this.stuff; 
             
         }
         
